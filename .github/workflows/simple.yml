@@ -11,6 +11,5 @@ jobs:
       - 
         name: multiline
         run: |-
-            node -v
             npm -v
 	    curl ifconfig.me
