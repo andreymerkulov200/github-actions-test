@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo String
-      - run: echo "Hello From First Github actions"
+        run: echo "Hello From First Github actions"
       - name: multiline
-      - run: |
+        run: |
 	  node -v
 	  npm-v
