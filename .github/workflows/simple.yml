@@ -1,4 +1,6 @@
---- 
+---
+name: "Shell Commands"
+on: push 
 jobs: 
   run-shell-command: 
     runs-on: ubuntu-latest
@@ -11,6 +13,3 @@ jobs:
         run: |-
             node -v
             npm-v
-name: "Shell Commands"
-true: 
-  - push
