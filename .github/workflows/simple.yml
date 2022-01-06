@@ -2,7 +2,7 @@
 name: "Terraform Setup"
 on: pull_request
 jobs: 
-  run-shell-command: 
+  setup-terraform: 
     runs-on: ubuntu-latest
     steps:
       - name: CheckOut
