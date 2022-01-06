@@ -4,7 +4,8 @@ on: pull_request
 jobs: 
   run-shell-command: 
     runs-on: ubuntu-latest
-    steps: 
+    steps:
+      - uses: hashicorp/setup-terraform@v1
       - 
         name: "echo String"
         run: "echo \"Hello From First Github actions\""
