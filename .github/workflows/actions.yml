@@ -1,5 +1,5 @@
 name: Actions Workflow
-on: [pull]
+on: [pull_request]
 
 jobs:
   run-github-actions:
