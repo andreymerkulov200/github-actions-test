@@ -19,6 +19,7 @@ jobs:
           print (platform.processor())
         shell: python
 
+<<<<<<< Updated upstream
   run-windows-command:
     runs-on: windows-latest
     steps:
@@ -26,3 +27,26 @@ jobs:
         name: "Directory Powershell"
         run: pwd
         shell: bash
+=======
+      #   name: "echo String"
+      #   run: "echo \"Hello From First Github actions\""
+      # - 
+      #   name: multiline
+      #   run: |-
+      #       npm -v
+      #       curl ifconfig.me
+      # - name: python command
+      #   run: |
+      #     import platform
+      #     print (platform.processor())
+      #   shell: python
+
+  # run-windows-command:
+  #   runs-on: windows-latest
+  #   steps:
+  #     -
+  #       name: "Directory Powershell"
+  #       run: pwd
+  #       shell: bash
+
+>>>>>>> Stashed changes
