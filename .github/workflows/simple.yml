@@ -1,22 +1,26 @@
----
-name: "Terraform Setup"
-on: pull_request
+--- 
 jobs: 
   setup-terraform: 
     runs-on: ubuntu-latest
-    steps:
-      - name: CheckOut
+    steps: 
+      - 
+        name: CheckOut
         uses: actions/checkout@v1
-      - name: Add base Terraform File
-        run: touch main.tf
-
-      - uses: hashicorp/setup-terraform@v1
-      - run: terraform init
-      - id: plan
-        run: terraform plan
-
-      - name: List files
-        run: |
-          pwd
-          ls -ls
-          uptime
+      - 
+        name: "Add base Terraform File"
+        run: "touch main.tf"
+      - 
+        uses: hashicorp/setup-terraform@v1
+      - 
+        run: "terraform init"
+      - 
+        id: plan
+        run: "terraform plan"
+      - 
+        name: "List files"
+        run: |-
+            pwd
+            ls -ls
+            uptime
+name: "Terraform Setup"
+true: pull_request
