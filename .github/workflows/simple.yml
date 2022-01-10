@@ -13,7 +13,7 @@ jobs:
       - uses: hashicorp/setup-terraform@v1
       - run: terraform init
       - id: plan
-        run: terraform plan -no-color
+        run: terraform plan
 
       - name: List files
         run: |
